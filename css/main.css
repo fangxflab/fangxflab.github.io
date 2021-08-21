@@ -1288,9 +1288,6 @@ mjx-container svg:focus,
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.index-card {
-  margin-bottom: 2.5rem;
-}
 .index-img img {
   display: block;
   width: 100%;
