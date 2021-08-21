@@ -153,18 +153,13 @@
           
         
         
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;</a>
-          </li>
-        
         
       </ul>
     </div>
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
+    <div class="banner" id="banner" false
          style="background: url('/img/bg/2.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
@@ -240,7 +235,7 @@
               <hr>
 <p><font face = "Times" size=8> Contact us</font></p>
 <hr>
-<p><strong>通讯地址</strong><br><br><br><em>Mailing Address</em><br><br><br><br><br>生命科学学院,生物技术馆4211<br><br><br>Room 4-211 Biotech Building, School of Life Sciences<br><br><br>清华大学<br><br><br>Tsinghua University, Beijing 100084, China<br><br><br><strong>TEL:</strong> 010-62796448<br><br><br><strong>Email:</strong> <a href="mailto:&#120;&#102;&#102;&#97;&#110;&#103;&#64;&#109;&#x61;&#x69;&#108;&#x2e;&#x74;&#115;&#x69;&#x6e;&#x67;&#x68;&#117;&#97;&#46;&#101;&#100;&#117;&#46;&#x63;&#110;">&#120;&#102;&#102;&#97;&#110;&#103;&#64;&#109;&#x61;&#x69;&#108;&#x2e;&#x74;&#115;&#x69;&#x6e;&#x67;&#x68;&#117;&#97;&#46;&#101;&#100;&#117;&#46;&#x63;&#110;</a></p>
+<p><strong>通讯地址</strong><br><br><br><em>Mailing Address</em><br><br><br><br><br>生命科学学院,生物技术馆4211<br><br><br>Room 4-211 Biotech Building, School of Life Sciences<br><br><br>清华大学<br><br><br>Tsinghua University, Beijing 100084, China<br><br><br><strong>TEL:</strong> 010-62796448<br><br><br><strong>Email:</strong> <a href="mailto:&#x78;&#102;&#102;&#97;&#x6e;&#x67;&#64;&#x6d;&#97;&#x69;&#108;&#46;&#x74;&#x73;&#x69;&#110;&#103;&#104;&#x75;&#x61;&#46;&#101;&#100;&#117;&#46;&#99;&#x6e;">&#x78;&#102;&#102;&#97;&#x6e;&#x67;&#64;&#x6d;&#97;&#x69;&#108;&#46;&#x74;&#x73;&#x69;&#110;&#103;&#104;&#x75;&#x61;&#46;&#101;&#100;&#117;&#46;&#99;&#x6e;</a></p>
 
             </div>
             <hr>
@@ -298,28 +293,6 @@
       </a>
     
 
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
     
 
     
@@ -413,19 +386,6 @@
 
 
 
-
-  <script  src="/js/local-search.js" ></script>
-  <script>
-    (function () {
-      var path = "/local-search.xml";
-      $('#local-search-input').on('click', function() {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      });
-      $('#modalSearch').on('shown.bs.modal', function() {
-        $('#local-search-input').focus();
-      });
-    })()
-  </script>
 
 
 
