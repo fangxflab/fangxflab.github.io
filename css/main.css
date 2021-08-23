@@ -42,7 +42,7 @@
 }
 #board {
   position: relative;
-  margin-top: -2rem;
+  margin-top: 1rem;
   background-color: var(--board-bg-color);
   transition: background-color 0.2s ease-in-out;
   border-radius: 0.5rem;
