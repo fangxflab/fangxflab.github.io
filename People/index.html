@@ -35,6 +35,8 @@
   
 
   
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -190,7 +192,75 @@
                 
 
 <article class="page-content">
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+<p>*, *:before, *:after {<br>  box-sizing: inherit;<br>}</p>
+<p>.column {<br>  float: left;<br>  width: 33.3%;<br>  margin-bottom: 16px;<br>  padding: 0 8px;<br>}</p>
+<p>@media screen and (max-width: 650px) {<br>  .column {<br>    width: 100%;<br>    display: block;<br>  }<br>}</p>
+<p>.card {<br>  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);<br>}</p>
+<p>.container {<br>  padding: 0 16px;<br>}</p>
+<p>.container::after, .row::after {<br>  content: “”;<br>  clear: both;<br>  display: table;<br>}</p>
+<p>.title {<br>  color: grey;<br>}</p>
+<p>.button {<br>  border: none;<br>  outline: 0;<br>  display: inline-block;<br>  padding: 8px;<br>  color: white;<br>  background-color: #000;<br>  text-align: center;<br>  cursor: pointer;<br>  width: 100%;<br>}</p>
+<p>.button:hover {<br>  background-color: #555;<br>}<br></style></p>
+</head>
+<body>
+
+<h2>Responsive "Meet The Team" Section</h2>
+<p>Resize the browser window to see the effect.</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/" srcset="/img/loading.gif" lazyload alt="/img/people/张红红.jpeg" alt="zhang honghong" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/img/people/彭方玉.jpg" srcset="/img/loading.gif" lazyload alt="Peng fangyu" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
   
+  <div class="column">
+    <div class="card">
+      <img src="/img/people//潘耿宇.jpg" srcset="/img/loading.gif" lazyload alt="pangengyu" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
 
   
 </article>
@@ -280,6 +350,8 @@
 
 
 
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
 
 
 
