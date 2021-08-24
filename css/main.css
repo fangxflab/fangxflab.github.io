@@ -1289,7 +1289,16 @@ mjx-container svg:focus,
   text-overflow: ellipsis;
 }
 .index-card {
-  margin-bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 20px 30px 3px rgba(0,0,0,0.55);
 }
 .index-img img {
   display: block;
@@ -1307,6 +1316,7 @@ mjx-container svg:focus,
 }
 .index-header {
   color: var(--text-color);
+  text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.4;
