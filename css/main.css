@@ -1360,41 +1360,30 @@ mjx-container svg:focus,
   }
 }
 .card {
-  background: transparent;
+  background: #000;
   position: absolute;
-  margin: auto;
 }
 .card h1 {
   color: #fff;
   font-weight: 400;
   text-align: center;
   font-size: 40px;
-  margin: 30px 0 0 0;
-  padding: 0 0 0 40px;
   letter-spacing: 1px;
 }
-.card .address {
+.card .Address {
   width: 100%;
   float: center;
-  background: #000;
-  height: 400px;
 }
-.card .address h3 {
+.card .Address h3 {
   color: #fff;
   font-weight: 400;
   text-align: center;
   font-size: 30px;
-  margin: 30px 0 0 0;
-  padding: 0 0 0 40px;
-  letter-spacing: 1px;
 }
 .card .card_left__review p {
   color: #fff;
   text-align: center;
-  font-size: 12px;
-  padding: 0 40px 0 40px;
-  letter-spacing: 1px;
-  margin: 10px 0 10px 0;
+  font-size: 20px;
   line-height: 20px;
 }
 .post-content,
