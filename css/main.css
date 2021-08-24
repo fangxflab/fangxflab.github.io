@@ -1289,10 +1289,12 @@ mjx-container svg:focus,
   text-overflow: ellipsis;
 }
 .index-card {
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
   background: #000;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .index-img img {
   display: block;
@@ -1305,21 +1307,11 @@ mjx-container svg:focus,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .index-header {
-  color: var(--text-color);
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: bold;
-  line-height: 1.4;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 0.25rem;
-}
-.index-header .index-header2 {
-  color: var(--text-color);
+  color: #fff;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.2;
@@ -1327,23 +1319,32 @@ mjx-container svg:focus,
   text-overflow: ellipsis;
   margin-bottom: 0.25rem;
 }
+.index-header .index-header2 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.25rem;
+}
 .index-header .index-pin {
-  color: var(--text-color);
-  font-size: 1.5rem;
+  color: #fff;
+  font-size: 1rem;
   margin-right: 0.15rem;
 }
 .index-btm {
-  color: var(--sec-text-color);
+  color: #fff;
 }
 .index-btm a {
-  color: var(--sec-text-color);
+  color: #fff;
 }
 .index-excerpt {
-  color: var(--sec-text-color);
-  font-size: 1.2rem;
+  color: #fff;
+  font-size: 1rem;
   margin: 0.5rem 0 0.5rem 0;
-  max-height: calc(1.2rem * 5);
-  line-height: 1.2rem;
+  max-height: calc(1rem * 5);
+  line-height: 0.8rem;
   overflow: hidden;
 }
 .index-excerpt > div {
