@@ -1289,16 +1289,10 @@ mjx-container svg:focus,
   text-overflow: ellipsis;
 }
 .index-card {
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   background: #000;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  box-shadow: 0px 20px 30px 3px rgba(0,0,0,0.55);
 }
 .index-img img {
   display: block;
@@ -1317,20 +1311,18 @@ mjx-container svg:focus,
 .index-header {
   color: var(--text-color);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.4;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 0.25rem;
 }
 .index-header .index-header2 {
   color: var(--text-color);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  line-height: 1.4;
-  white-space: nowrap;
+  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 0.25rem;
@@ -1348,9 +1340,10 @@ mjx-container svg:focus,
 }
 .index-excerpt {
   color: var(--sec-text-color);
+  font-size: 1.2rem;
   margin: 0.5rem 0 0.5rem 0;
-  max-height: calc(1.4rem * 3);
-  line-height: 1.4rem;
+  max-height: calc(1.2rem * 5);
+  line-height: 1.2rem;
   overflow: hidden;
 }
 .index-excerpt > div {
