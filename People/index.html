@@ -107,9 +107,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/Publication/">
+              <a class="nav-link" href="/Publications/">
                 
-                Publication
+                Publications
               </a>
             </li>
           
@@ -211,7 +211,7 @@ h4:after
   background: #333;
   display: block;
   height: 1px;
-  width: 800px;
+  width: 700px;
   margin: 10px auto;
 }
 .profile
@@ -253,7 +253,21 @@ h4:after
   top: 0;
   bottom: 0;
 }
-
+h8:after
+{
+  content: '';
+  background: #333;
+  display: block;
+  height: 1px;
+  width: 300px;
+  //上，右，下，左
+  margin: 10px auto 10px 0;
+}
+.img-size
+{
+  width: 150
+  height: auto
+}
 </style>
 
 <html>
@@ -264,27 +278,31 @@ h4:after
 
 <section class="team">
   <h8 style='text-align:left;font-size: 15px;margin-top: 15px;' >Update date: 2021-08-25</h8>
-  <hr>
+    <hr>
   <div class="container">
-    <h4>PI</h4>
+    <h4>Principal Investigator</h4>
     <div class='row'>
       <div class='col-xs-6 col-md-6 profile'>
         <div class='img-box'>
-          <img src="/img/people/people/方晓峰-crop.jpg" srcset="/img/loading.gif" lazyload class="img-responsive">
+          <img src="/img/people/people/方晓峰-crop.jpg" srcset="/img/loading.gif" lazyload class="img-responsive img-size">
         </div>
       </div>
       <div class='col-xs-6 col-md-6 text-left content mt-auto mb-auto profile'>
         <div>
           <h5>Dr.Xiaofeng Fang</h5>
           <h6>Assistant Professor</h6>
-          <h6>School of Life Sciences,Tsinghua University</h6>
-          <h6>Emil: xffang@mail.tsinghua.edu.cn</h6>
+          <h8>Emil: xffang@mail.tsinghua.edu.cn</h8>
+          <h7>2020-present: Assistant Professor,Principal Investigator,School of Life Sciences,Tsinghua University, Beijing</h7>
+          <h7>2017-2020:    Marie Skłodowska-Curie Fellow,Postdoctoral Scientist,John Innes Centre, UK</h7>
+          <h7>2015-2017:    Postdoctoral Scientist,Tsinghua University, Beijing</h7>
+          <h7>2009-2015:    Ph.D., Peking Union Medical College & National Institute of Biological Sciences (NIBS)</h7>
+          <h7>2005-2009:    B.S.A. Northwestern A&F University, Xi’an</h7>
         </div>
       </div>
     </div>
   </div>
-  <hr>        
-    <h4>Post docs</h4>
+    <hr>        
+    <h4>Post-docs</h4>
     <div class='row'>
       <div class='col-xs-6 col-md-4 profile text-center'>
         <div class='img-box'>
@@ -317,14 +335,14 @@ h4:after
          <h6>Yunhe Wang</h6>
        </div>
     </div>
-  <hr>
-    <h4>Ph.D students</h4>
+    <hr>
+    <h4>Graduate Students</h4>
     <div class='row'>
       <div class='col-xs-6 col-md-4 profile text-center'>
         <div class='img-box'>
           <img src="/img/people/people/李昌轩-crop.jpg" srcset="/img/loading.gif" lazyload class="img-responsive">
       </div>
-        <h6>Changxun Li</h6>
+        <h6>Changxuan Li</h6>
       </div>
       <div class='col-xs-6 col-md-4 profile text-center'>
         <div class='img-box'>
@@ -351,7 +369,7 @@ h4:after
           <h6>Boyu Wang</h6>
       </div>
     </div>
-  <hr>
+    <hr>
     <h4>Research assistant</h4>
     <div class='row'>
       <div class='col-xs-6 col-md-4 profile text-center'>
@@ -366,10 +384,6 @@ h4:after
 </section>
 </body>
 <html>
-
-
-
-
 
 
 
@@ -400,30 +414,6 @@ h4:after
   <span>Copyright © 2021 by Fangxf Lab | Designed by Fangyu Peng </span>  <br>
   </div> 
   
-  <div class="statistics">
-    
-    
-
-    
-      
-        <!-- 不蒜子统计PV -->
-        <span id="busuanzi_container_site_pv" style="display: none">
-            总访问量 
-            <span id="busuanzi_value_site_pv"></span>
-             次
-          </span>
-      
-      
-        <!-- 不蒜子统计UV -->
-        <span id="busuanzi_container_site_uv" style="display: none">
-            总访客数 
-            <span id="busuanzi_value_site_uv"></span>
-             人
-          </span>
-      
-    
-  </div>
-
 
 </footer>
 
@@ -471,8 +461,6 @@ h4:after
   <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
 
 
-
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
