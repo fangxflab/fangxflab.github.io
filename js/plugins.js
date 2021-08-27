@@ -58,8 +58,7 @@ Fluid.plugins = {
   initFancyBox: function() {
     if (!$.fancybox) { return; }
 
-    $(`.post-content :not(a) > img:not([nozoom]), .post-content > img:not([nozoom]),
-      .page-content :not(a) > img:not([nozoom]), .page-content > img:not([nozoom])`)..each(function() {
+    $('.markdown-body :not(a) > img, .markdown-body > img').each(function() {
       var $image = $(this);
       var imageUrl = $image.attr('data-src') || $image.attr('src') || '';
       if (CONFIG.image_zoom.img_url_replace) {
