@@ -1,296 +1,373 @@
+---
+title: Gallery
+layout: page
+banner_img: /img/default.png
+banner_img_height: 60
+banner_mask_alpha: 0.25
+subtitle: Glimpses of Our Lab · 凝聚体与应激的日常与瞬间
+image_zoom: true
+lazyload: true
+toc: false
+---
 
+<style>
+:root{
+  --fg:#0f172a; --muted:#64748b; --accent:#0ea5e9; --line:#e5e7eb; --card:#ffffff;
+  --shadow: 0 10px 30px rgba(2,6,23,.08);
+}
+.markdown-body{ color:var(--fg); line-height:1.78; }
+.gallery-intro{ margin:.3rem 0 1rem; color:#334155; }
+hr{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent); margin:16px 0;}
 
-<!DOCTYPE html>
-<html lang="en" >
+.gallery-nav{ display:flex; flex-wrap:wrap; gap:.5rem; margin:.25rem 0 1rem; }
+.gallery-nav button{
+  border:1px solid var(--line); background:#fff; padding:.45rem .8rem; border-radius:12px; cursor:pointer;
+  font-weight:800; color:#334155;
+}
+.gallery-nav button.active{ background:var(--accent); color:#fff; border-color:var(--accent); }
 
+.album{ display:none; }
+.album.active{ display:block; }
 
+.grid{ display:grid; grid-template-columns: 1fr; gap:14px; }
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
-  <link rel="icon" href="/img/icon.png">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#000000">
-  <meta name="description" content="">
-  <meta name="author" content="Tianyou Liu">
-  <meta name="keywords" content="">
-  
-  <title>Gallery - Fang Lab</title>
+.card{
+  display:flex; gap:16px; align-items:center; padding:14px; border:1px solid var(--line);
+  border-radius:16px; background:var(--card); box-shadow: var(--shadow);
+}
+.thumb{
+  flex: 0 0 320px; height:190px; overflow:hidden; border-radius:12px; background:#f8fafc;
+  display:flex; align-items:center; justify-content:center;
+}
+.thumb img{ width:100%; height:100%; object-fit:cover; }
+.meta{ flex:1 1 auto; min-width:0; }
+.meta h3{ margin:.1rem 0 .3rem; font-weight:900; letter-spacing:.2px; font-size:1.08rem;}
+.meta .tagline{ color:#334155; margin:.15rem 0 .4rem; }
+.meta .meta-row{ font-size:.92rem; color:#64748b; margin:.1rem 0 .35rem; }
+.meta .chips{ display:flex; gap:.4rem; flex-wrap:wrap; margin-top:.25rem;}
+.chips span{
+  display:inline-block; font-size:.82rem; color:#475569; background:#f1f5f9; padding:.2rem .5rem; border-radius:10px; border:1px solid #e2e8f0;
+}
 
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+@media (max-width: 980px){
+  .thumb{ width:100%; height:200px; }
+  .card{ flex-direction:column; align-items:stretch; }
+}
+</style>
 
+<div class="gallery-intro">
+我们围绕“<b>生物大分子凝聚体 × 植物应激</b>”开展研究，这里记录了我们的<a href="/News/">科研里程碑</a>与日常片段。横向卡片可点击左侧预览图查看大图（灯箱）。
+</div>
 
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+<div class="gallery-nav">
+  <button class="tab active" data-for="album-life">Lab Life</button>
+  <button class="tab" data-for="album-graduation">Graduation</button>
+  <button class="tab" data-for="album-visitors">Visitors</button>
+  <button class="tab" data-for="album-sports">Sports</button>
+  <button class="tab" data-for="album-outing">Outing</button>
+  <button class="tab" data-for="album-seminars">Seminars</button>
+  <button class="tab" data-for="album-pubs">Publications</button>
+</div>
 
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.6.0/styles/github-gist.min.css" />
-    
-  
+<!-- ======================= Lab Life ======================= -->
+<div id="album-life" class="album active">
+  <div class="grid">
 
-  
-  
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"fanglab.org.cn","root":"/","version":"1.8.10","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-
-<body>
-  <header style="height: 40vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand"
-       href="/">&nbsp;<strong>Welcome to Fang Lab</strong>&nbsp;</a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                
-                Home
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/Research/">
-                
-                Research
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/Publications/">
-                
-                Publications
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/People/">
-                
-                People
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/Gallery/">
-                
-                Gallery
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/News/">
-                
-                News
-              </a>
-            </li>
-          
-        
-        
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div class="banner" id="banner" false
-         style="background: url('/img/page-crop.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Gallery">
-              
-                Gallery
-              
-            </span>
-
-            
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<article class="page-content">
-  
-
-  
-</article>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-    
-      <a id="scroll-top-button" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    <div class="card">
+      <a class="thumb" href="/img/gallery/2025新年1.jpg" data-fancybox="life" data-caption="2025 新年 1">
+        <img src="/img/gallery/2025新年1.jpg" alt="2025新年1">
       </a>
-    
+      <div class="meta">
+        <h3>2025 新年 · 合影 1</h3>
+        <div class="meta-row">Date: 2025 · Category: Lab Life</div>
+        <div class="tagline">新年团聚，记录一年开端的能量与期待。</div>
+        <div class="chips">
+          <span>New Year</span><span>Team</span><span>2025</span>
+        </div>
+      </div>
+    </div>
 
-    
+    <div class="card">
+      <a class="thumb" href="/img/gallery/2025新年2.jpg" data-fancybox="life" data-caption="2025 新年 2">
+        <img src="/img/gallery/2025新年2.jpg" alt="2025新年2">
+      </a>
+      <div class="meta">
+        <h3>2025 新年 · 合影 2</h3>
+        <div class="meta-row">Date: 2025 · Category: Lab Life</div>
+        <div class="tagline">笑容定格，共赴下一程科研旅途。</div>
+        <div class="chips">
+          <span>New Year</span><span>Team</span><span>2025</span>
+        </div>
+      </div>
+    </div>
 
-    
-  </main>
+    <div class="card">
+      <a class="thumb" href="/img/gallery/2025新年3.jpg" data-fancybox="life" data-caption="2025 新年 3">
+        <img src="/img/gallery/2025新年3.jpg" alt="2025新年3">
+      </a>
+      <div class="meta">
+        <h3>2025 新年 · 合影 3</h3>
+        <div class="meta-row">Date: 2025 · Category: Lab Life</div>
+        <div class="tagline">新年氛围组，继续上分。</div>
+        <div class="chips">
+          <span>New Year</span><span>Team</span><span>2025</span>
+        </div>
+      </div>
+    </div>
 
-  <footer class="text-center mt-5 py-3">
-<font size="3" face="Georgia">
-  <div>
-  <span>Copyright © 2025 by Fangxf Lab | Designed by Tianyou Liu </span>  <br>
-  </div> 
-  
+    <div class="card">
+      <a class="thumb" href="/img/gallery/2025教师节.jpg" data-fancybox="life" data-caption="2025 教师节">
+        <img src="/img/gallery/2025教师节.jpg" alt="2025教师节">
+      </a>
+      <div class="meta">
+        <h3>2025 教师节</h3>
+        <div class="meta-row">Date: 2025 · Category: Lab Life</div>
+        <div class="tagline">致敬引路人。</div>
+        <div class="chips">
+          <span>Teacher’s Day</span><span>Thanks</span><span>2025</span>
+        </div>
+      </div>
+    </div>
 
-</footer>
+    <div class="card">
+      <a class="thumb" href="/img/gallery/2024教师节.jpg" data-fancybox="life" data-caption="2024 教师节">
+        <img src="/img/gallery/2024教师节.jpg" alt="2024教师节">
+      </a>
+      <div class="meta">
+        <h3>2024 教师节</h3>
+        <div class="meta-row">Date: 2024 · Category: Lab Life</div>
+        <div class="tagline">成长路上，有您在。</div>
+        <div class="chips">
+          <span>Teacher’s Day</span><span>Thanks</span><span>2024</span>
+        </div>
+      </div>
+    </div>
 
+    <div class="card">
+      <a class="thumb" href="/img/gallery/2023教师节.jpg" data-fancybox="life" data-caption="2023 教师节">
+        <img src="/img/gallery/2023教师节.jpg" alt="2023教师节">
+      </a>
+      <div class="meta">
+        <h3>2023 教师节</h3>
+        <div class="meta-row">Date: 2023 · Category: Lab Life</div>
+        <div class="tagline">感谢相伴，见证蜕变。</div>
+        <div class="chips">
+          <span>Teacher’s Day</span><span>Thanks</span><span>2023</span>
+        </div>
+      </div>
+    </div>
 
-  <!-- SCRIPTS -->
-  
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+  </div>
+</div>
 
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
+<!-- ======================= Graduation ======================= -->
+<div id="album-graduation" class="album">
+  <div class="grid">
 
+    <div class="card">
+      <a class="thumb" href="/img/gallery/师兄毕业合影.jpg" data-fancybox="graduation" data-caption="师兄毕业合影">
+        <img src="/img/gallery/师兄毕业合影.jpg" alt="师兄毕业合影">
+      </a>
+      <div class="meta">
+        <h3>毕业合影</h3>
+        <div class="meta-row">Category: Graduation</div>
+        <div class="tagline">新的起点，持续发光。</div>
+        <div class="chips"><span>Milestone</span><span>Team</span></div>
+      </div>
+    </div>
 
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+    <div class="card">
+      <a class="thumb" href="/img/gallery/李昌轩师兄毕业照.jpg" data-fancybox="graduation" data-caption="李昌轩师兄毕业照">
+        <img src="/img/gallery/李昌轩师兄毕业照.jpg" alt="李昌轩师兄毕业照">
+      </a>
+      <div class="meta">
+        <h3>毕业照</h3>
+        <div class="meta-row">Category: Graduation</div>
+        <div class="tagline">此去山高路远，常回家看看。</div>
+        <div class="chips"><span>Graduation</span></div>
+      </div>
+    </div>
 
-<!-- Plugins -->
+    <div class="card">
+      <a class="thumb" href="/img/gallery/李昌轩师兄毕业典礼和方晓峰老师合影.jpg" data-fancybox="graduation" data-caption="毕业典礼合影">
+        <img src="/img/gallery/李昌轩师兄毕业典礼和方晓峰老师合影.jpg" alt="毕业典礼合影">
+      </a>
+      <div class="meta">
+        <h3>毕业典礼合影</h3>
+        <div class="meta-row">Category: Graduation</div>
+        <div class="tagline">跨越山海的下一步，从这里出发。</div>
+        <div class="chips"><span>Ceremony</span></div>
+      </div>
+    </div>
 
+  </div>
+</div>
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
+<!-- ======================= Visitors ======================= -->
+<div id="album-visitors" class="album">
+  <div class="grid">
 
+    <div class="card">
+      <a class="thumb" href="/img/gallery/Roland和Alex来访.jpg" data-fancybox="visitors" data-caption="Roland & Alex 来访">
+        <img src="/img/gallery/Roland和Alex来访.jpg" alt="Roland 和 Alex 来访">
+      </a>
+      <div class="meta">
+        <h3>来访交流 · Roland & Alex</h3>
+        <div class="meta-row">Category: Visitors</div>
+        <div class="tagline">跨学科对话，让问题有更多解法。</div>
+        <div class="chips"><span>Collaboration</span><span>Discussion</span></div>
+      </div>
+    </div>
 
+  </div>
+</div>
 
-  
+<!-- ======================= Sports ======================= -->
+<div id="album-sports" class="album">
+  <div class="grid">
 
+    <div class="card">
+      <a class="thumb" href="/img/gallery/“师门杯”羽毛球赛.jpg" data-fancybox="sports" data-caption="“师门杯”羽毛球赛">
+        <img src="/img/gallery/“师门杯”羽毛球赛.jpg" alt="师门杯羽毛球赛">
+      </a>
+      <div class="meta">
+        <h3>“师门杯”羽毛球赛</h3>
+        <div class="meta-row">Category: Sports</div>
+        <div class="tagline">比赛之外，是默契与配合。</div>
+        <div class="chips"><span>Badminton</span><span>Team</span></div>
+      </div>
+    </div>
 
+    <!-- 内卷王杯 1-8 放为一个灯箱组 -->
+    <div class="card">
+      <a class="thumb" href="/img/gallery/清华内卷王杯长跑比赛1.jpg" data-fancybox="sports-run" data-caption="清华内卷王杯长跑比赛 1">
+        <img src="/img/gallery/清华内卷王杯长跑比赛1.jpg" alt="清华内卷王杯长跑1">
+      </a>
+      <div class="meta">
+        <h3>清华内卷王杯 · 长跑</h3>
+        <div class="meta-row">Category: Sports</div>
+        <div class="tagline">步履不停，心率上分。</div>
+        <div class="chips"><span>Running</span><span>Challenge</span></div>
+      </div>
+    </div>
 
+    <!-- 隐藏挂载其余 2-8 以便灯箱浏览 -->
+    <a href="/img/gallery/清华内卷王杯长跑比赛2.jpg" data-fancybox="sports-run" data-caption="清华内卷王杯长跑比赛 2"></a>
+    <a href="/img/gallery/清华内卷王杯长跑比赛3.jpg" data-fancybox="sports-run" data-caption="清华内卷王杯长跑比赛 3"></a>
+    <a href="/img/gallery/清华内卷王杯长跑比赛4.jpg" data-fancybox="sports-run" data-caption="清华内卷王杯长跑比赛 4"></a>
+    <a href="/img/gallery/清华内卷王杯长跑比赛5.jpg" data-fancybox="sports-run" data-caption="清华内卷王杯长跑比赛 5"></a>
+    <a href="/img/gallery/清华内卷王杯长跑比赛6.jpg" data-fancybox="sports-run" data-caption="清华内卷王杯长跑比赛 6"></a>
+    <a href="/img/gallery/清华内卷王杯长跑比赛7.jpg" data-fancybox="sports-run" data-caption="清华内卷王杯长跑比赛 7"></a>
+    <a href="/img/gallery/清华内卷王杯长跑比赛8.jpg" data-fancybox="sports-run" data-caption="清华内卷王杯长跑比赛 8"></a>
 
+  </div>
+</div>
 
+<!-- ======================= Outing ======================= -->
+<div id="album-outing" class="album">
+  <div class="grid">
 
+    <div class="card">
+      <a class="thumb" href="/img/gallery/潭柘寺游玩1.jpg" data-fancybox="outing" data-caption="潭柘寺游玩 1">
+        <img src="/img/gallery/潭柘寺游玩1.jpg" alt="潭柘寺游玩1">
+      </a>
+      <div class="meta">
+        <h3>潭柘寺 · 游玩 1</h3>
+        <div class="meta-row">Category: Outing</div>
+        <div class="tagline">山寺清风，换个场景再思考。</div>
+        <div class="chips"><span>Trip</span><span>Team</span></div>
+      </div>
+    </div>
 
-  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+    <div class="card">
+      <a class="thumb" href="/img/gallery/潭柘寺游玩2.jpg" data-fancybox="outing" data-caption="潭柘寺游玩 2">
+        <img src="/img/gallery/潭柘寺游玩2.jpg" alt="潭柘寺游玩2">
+      </a>
+      <div class="meta">
+        <h3>潭柘寺 · 游玩 2</h3>
+        <div class="meta-row">Category: Outing</div>
+        <div class="tagline">步幅与思路，一起松弛。</div>
+        <div class="chips"><span>Trip</span><span>Team</span></div>
+      </div>
+    </div>
 
+  </div>
+</div>
 
+<!-- ======================= Seminars ======================= -->
+<div id="album-seminars" class="album">
+  <div class="grid">
 
-  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+    <div class="card">
+      <a class="thumb" href="/img/gallery/相分离研讨会.jpg" data-fancybox="seminars" data-caption="相分离研讨会">
+        <img src="/img/gallery/相分离研讨会.jpg" alt="相分离研讨会">
+      </a>
+      <div class="meta">
+        <h3>相分离研讨会</h3>
+        <div class="meta-row">Category: Seminars</div>
+        <div class="tagline">思维碰撞，观点升维。</div>
+        <div class="chips"><span>Seminar</span><span>Condensates</span></div>
+      </div>
+    </div>
 
+    <div class="card">
+      <a class="thumb" href="/img/gallery/第三届全国生物相分离学术研讨会.jpg" data-fancybox="seminars" data-caption="第三届全国生物相分离学术研讨会">
+        <img src="/img/gallery/第三届全国生物相分离学术研讨会.jpg" alt="第三届全国生物相分离学术研讨会">
+      </a>
+      <div class="meta">
+        <h3>第三届全国生物相分离学术研讨会</h3>
+        <div class="meta-row">Category: Seminars</div>
+        <div class="tagline">跨领域对话，把科学问题讲清楚。</div>
+        <div class="chips"><span>Conference</span><span>Nationwide</span></div>
+      </div>
+    </div>
 
+  </div>
+</div>
 
+<!-- ======================= Publications ======================= -->
+<div id="album-pubs" class="album">
+  <div class="grid">
 
+    <div class="card">
+      <a class="thumb" href="/img/gallery/艳宁师姐nature文章发表.jpg" data-fancybox="pubs" data-caption="Nature 论文发表">
+        <img src="/img/gallery/艳宁师姐nature文章发表.jpg" alt="Nature 论文发表">
+      </a>
+      <div class="meta">
+        <h3>论文发表 · Nature</h3>
+        <div class="meta-row">Category: Publications</div>
+        <div class="tagline">又一块拼图就位。</div>
+        <div class="chips"><span>Nature</span><span>Publication</span></div>
+      </div>
+    </div>
 
+    <div class="card">
+      <a class="thumb" href="/img/gallery/耿攀师姐cell-research文章发表.jpg" data-fancybox="pubs" data-caption="Cell Research 论文发表">
+        <img src="/img/gallery/耿攀师姐cell-research文章发表.jpg" alt="Cell Research 论文发表">
+      </a>
+      <div class="meta">
+        <h3>论文发表 · Cell Research</h3>
+        <div class="meta-row">Category: Publications</div>
+        <div class="tagline">热与凝聚，时序与选择。</div>
+        <div class="chips"><span>Cell Research</span><span>Publication</span></div>
+      </div>
+    </div>
 
+  </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
-<script  src="/js/boot.js" ></script>
-
-
-
-</body>
-</html>
+<script>
+(function(){
+  const tabs = document.querySelectorAll('.gallery-nav .tab');
+  const albums = document.querySelectorAll('.album');
+  tabs.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      tabs.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      const id = btn.dataset.for;
+      albums.forEach(a=>a.classList.toggle('active', a.id===id));
+      window.scrollTo({top: document.querySelector('.gallery-nav').offsetTop - 80, behavior:'smooth'});
+    });
+  });
+})();
+</script>
